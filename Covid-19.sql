@@ -60,8 +60,9 @@ GROUP BY date
 HAVING SUM(new_cases)>0
 ORDER BY 1,2
 
---Total Populations vs Vaccinations
+--Total Populations vs Vaccinations (CTE)
 
+	
 With popvsvac
 AS(
 SELECT deaths.continent,deaths.location, deaths.date, deaths.population, vaccinations.new_vaccinations
